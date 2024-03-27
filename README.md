@@ -1,8 +1,8 @@
-# [Your Project Title]
+# MIST4610 Group Project 1
 [Short description of your project]
 
 ## Team Information
-**Team Name:** [Your Team Name]
+**Team Name:** 21484 Group 8
 
 **Team Members:**
 - [Jennifer Kim] @sobaworm
