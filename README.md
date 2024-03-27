@@ -52,14 +52,27 @@ In essence, this model captures the essence of our sports entity—team composit
 
 
 ## Queries
-### Query Descriptions
-[Provide a brief description of each query and its purpose]
 
 #### Query 1
 [Description]
 
 #### Query 2
 [Description]
+#### Query 3
+
+#### Query 4
+
+#### Query 5
+
+#### Query 6
+
+#### Query 7
+
+#### Query 8
+
+#### Query 9
+
+#### Query 10
 
 ...
 
