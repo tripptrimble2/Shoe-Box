@@ -15,7 +15,22 @@ We are tasked with developing a regional database that effectively organizes the
 
 ## Data Model
 ### Explanation of the Data Model
-[Provide a detailed explanation of your data model]
+Our data model is a streamlined representation of our sports organization’s operations. At its core is the Team entity, encompassing our main roster and the developmental youth academy. 
+
+The Player entity captures individual athlete profiles, forming a one-to-many relationship with Team. A team fields numerous players, yet each player commits to only one team. GameStats stem from each player's record, charting performance metrics in various matches, illustrating a player's journey through the seasons.
+
+TrainingSessions are systematically recorded, linked to the Team to track the preparation and skill enhancement of our squads. Matches intersect with teams via the Match_has_Team junction table, a many-to-many link mirroring the reality that matches are the confluence of competing teams.
+
+TicketSales and FanEngagement are the fan-focused entities, the former documenting the seats sold per match and the latter mapping players to their fan interactions through the PlayerEngagements junction.
+
+Emerging talents are noted in the YouthPlayers entity, each with a direct link to their professional counterpart in Player, showcasing the growth path from junior ranks to the professional stage.
+
+The Coach entity reflects the strategic minds guiding each team, while Merchandise offers a one-to-many snapshot of team-branded products available to fans.
+
+In essence, this model captures the essence of our sports entity—team composition, player development, match day experiences, and fan relations—all working in concert to drive our organization forward.
+
+
+
 
 ### Entity Relationship Diagram (ERD)
 ![ERD Image](link-to-erd-image)
