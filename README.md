@@ -1,5 +1,5 @@
 # MIST4610 Group Project 1
-sassasasassa
+ASS DICK DOCK BOOTY
 ## Team Information
 **Team Name:** 21484 Group 8
 
