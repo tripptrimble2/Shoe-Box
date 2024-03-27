@@ -37,7 +37,13 @@ In essence, this model captures the essence of our sports entity—team composit
 <img width="590" alt="Screenshot 2024-03-27 at 5 36 27 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/54597857-da6e-4db8-a06e-adb71cdb0891">
 
 ## Data Dictionary
-[Explain your data dictionary, or provide a link/image if it's external]
+<img width="643" alt="Screenshot 2024-03-27 at 5 44 21 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/456b2536-7414-47de-b1a7-d66f27de5122">
+<img width="493" alt="Screenshot 2024-03-27 at 5 45 35 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/1efea541-a4b0-413a-88f5-6a53f87f6430">
+<img width="496" alt="Screenshot 2024-03-27 at 5 46 49 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/0036de30-9082-42cc-98df-59ab7750248f">
+<img width="503" alt="Screenshot 2024-03-27 at 5 47 02 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/f7784297-2fce-4b7c-b934-94186218762f">
+<img width="516" alt="Screenshot 2024-03-27 at 5 47 31 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/0d3d1a40-2eff-46e2-97ec-51e0fafd826b">
+<img width="497" alt="Screenshot 2024-03-27 at 5 46 27 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/f6d7cf01-e856-47f7-8077-5f66a1d2c5bc">
+<img width="511" alt="Screenshot 2024-03-27 at 5 47 44 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/364188e5-0f81-46b2-990a-1b46984b7973">
 
 ## Queries
 ### Query Descriptions
