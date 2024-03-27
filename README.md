@@ -11,7 +11,7 @@
 - [Tripp Trimble] @[]
 
 ## Problem Description
-[Describe the problem your project addresses or the task it accomplishes]
+We are tasked with modeling and building a relational database for the owner of a football club. The name of the football club is “Victory FC” and they are dedicated to competing at the highest level of football while also fostering community engagement and promoting talent development within their youth academy. We need to create a relational database that accurately integrates data from various sources such as Teams, Players, Staff, Matches, Training, Youth Development, Fan Engagement, Merchandise, Sponsors, and Ticket Sales. Following the creation of the database we need to perform queries on this data in order to provide valuable insights on the operations of the football club. By designing a relational database that effectively integrates data from these sources and performing effective queries, we can provide Victory FC with a comprehensive solution for managing its diverse operations and achieving its goals of sporting excellence, community engagement, and commercial success.
 
 ## Data Model
 ### Explanation of the Data Model
