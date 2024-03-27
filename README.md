@@ -4,7 +4,7 @@ ASS DICK DOCK BOOTY
 **Team Name:** 21484 Group 8
 
 **Team Members:**
-- [Jennifer Kim] @sobaworm
+- Jennifer Kim [@sobaworm](https://github.com/kevinshen8)
 - [Kevin Shen] @kevinshen8
 - [Michael Smith] @Nicklanoce7
 - [Tripp Trimble] @[]
