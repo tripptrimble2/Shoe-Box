@@ -5,10 +5,10 @@
 **Team Name:** [Your Team Name]
 
 **Team Members:**
-- [Name] @[GitHubUsername]
-- [Name] @[GitHubUsername]
-- [Name] @[GitHubUsername]
-- ...
+- [Jennifer Kim] @sobaworm
+- [Kevin Shen] @kevinshin8
+- [Michael Smith] @Nicklanoce7
+- [Tripp Trimble] @[]
 
 ## Problem Description
 [Describe the problem your project addresses or the task it accomplishes]
