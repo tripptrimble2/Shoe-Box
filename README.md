@@ -65,6 +65,7 @@ In essence, this model captures the essence of our sports entity—team composit
 
 ## Database Information
 **Database Name:** ns_Sp24_21484_Group8
+
 **Additional Information:** [Any additional details about the database]
 
 ## How to Run Queries
