@@ -66,13 +66,3 @@ In essence, this model captures the essence of our sports entity—team composit
 ## Database Information
 **Database Name:** ns_Sp24_21484_Group8
 
-**Additional Information:** [Any additional details about the database]
-
-## How to Run Queries
-[Instructions on how to execute the queries, e.g., "CALL TP_Q1();"]
-
-## About the Project
-[Additional information about the project, its goals, outcomes, etc.]
-
-## Resources
-[Links to resources, documentation, or any other material relevant to the project]
