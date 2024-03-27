@@ -36,6 +36,17 @@ This data model not only charts the current state ranging from player statistics
 
 
 ## Data Dictionary
+<img width="588" alt="Screenshot 2024-03-27 at 7 00 08 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/8d685565-6874-44d8-badd-d2fae479306d">
+<img width="596" alt="Screenshot 2024-03-27 at 7 00 18 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/97478f00-5d10-421a-af38-b5e196fe4c47">
+<img width="580" alt="Screenshot 2024-03-27 at 7 00 42 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/0cbf2d92-359b-4f8b-9862-6cbbc9bde380">
+<img width="592" alt="Screenshot 2024-03-27 at 7 00 53 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/c3c2e599-9f97-4c82-b6ae-46386afbebf9">
+<img width="586" alt="Screenshot 2024-03-27 at 7 01 03 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/446424d2-015d-406f-a621-07a715b4dd2f">
+<img width="592" alt="Screenshot 2024-03-27 at 7 01 15 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/00202db8-15f5-403f-a87a-26c71308ca41">
+<img width="580" alt="Screenshot 2024-03-27 at 7 01 23 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/dc487bb5-428e-4106-a5de-b9c9e807d2ce">
+<img width="579" alt="Screenshot 2024-03-27 at 7 01 37 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/05d96502-8084-4ebe-a378-03a7333b0ba5">
+<img width="604" alt="Screenshot 2024-03-27 at 7 01 46 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/92aa7be7-c558-44b0-8e5e-f5284b254396">
+<img width="601" alt="Screenshot 2024-03-27 at 7 01 54 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/fb9df46a-b1f0-4297-b0f4-be2350845f1a">
+<img width="586" alt="Screenshot 2024-03-27 at 7 02 03 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/cb59cc64-16b3-4b65-8d41-56747da68df3">
 
 
 
