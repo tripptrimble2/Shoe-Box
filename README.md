@@ -38,7 +38,7 @@ In essence, this model captures the essence of our sports entity—team composit
 
 ## Data Dictionary
 <img width="643" alt="Screenshot 2024-03-27 at 5 44 21 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/456b2536-7414-47de-b1a7-d66f27de5122">
-<img width="493" alt="Screenshot 2024-03-27 at 5 45 35 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/1efea541-a4b0-413a-88f5-6a53f87f6430">
+<img width="488" alt="Screenshot 2024-03-27 at 6 29 40 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/8f20e787-798a-43ed-88df-9b0e2da27437">
 <img width="496" alt="Screenshot 2024-03-27 at 5 46 49 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/0036de30-9082-42cc-98df-59ab7750248f">
 <img width="503" alt="Screenshot 2024-03-27 at 5 47 02 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/f7784297-2fce-4b7c-b934-94186218762f">
 <img width="516" alt="Screenshot 2024-03-27 at 5 47 31 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/0d3d1a40-2eff-46e2-97ec-51e0fafd826b">
