@@ -6,7 +6,8 @@ ASS DICK DOCK BOOTY
 **Team Members:**
 - Jennifer Kim [@sobaworm](https://github.com/sobaworm/)
 - Kevin Shen [@kevinshen8](https://github.com/kevinshen8)
-- Michael Smith [@Nicklanoce7] (https://github.com/Nicklanoce7)
+- Michael Smith [@msmith165](https://github.com/msmith165)
+- Nick Lanoce [@Nicklanoce7] (https://github.com/Nicklanoce7)
 - [Tripp Trimble] @[
 
 ## Problem Description
