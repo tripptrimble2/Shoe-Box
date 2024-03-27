@@ -1,6 +1,5 @@
 # MIST4610 Group Project 1
-[Short description of your project]
-
+sassasasassa
 ## Team Information
 **Team Name:** 21484 Group 8
 
