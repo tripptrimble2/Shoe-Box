@@ -1,5 +1,5 @@
 # MIST4610 Group Project 1
-ASS DICK DOCK BOOTY
+
 ## Team Information
 **Team Name:** 21484 Group 8
 
@@ -44,6 +44,12 @@ In essence, this model captures the essence of our sports entity—team composit
 <img width="516" alt="Screenshot 2024-03-27 at 5 47 31 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/0d3d1a40-2eff-46e2-97ec-51e0fafd826b">
 <img width="497" alt="Screenshot 2024-03-27 at 5 46 27 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/f6d7cf01-e856-47f7-8077-5f66a1d2c5bc">
 <img width="511" alt="Screenshot 2024-03-27 at 5 47 44 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/364188e5-0f81-46b2-990a-1b46984b7973">
+<img width="494" alt="Screenshot 2024-03-27 at 5 47 57 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/25082938-f8b2-4709-9eb0-28aa64635ad9">
+<img width="478" alt="Screenshot 2024-03-27 at 5 48 32 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/02d9a64e-7fc3-416b-8c86-a161d98068ec">
+<img width="492" alt="Screenshot 2024-03-27 at 5 48 49 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/dfd64c4a-1a43-4ab7-8cf4-0e034eee8138">
+<img width="504" alt="Screenshot 2024-03-27 at 5 49 02 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/fd4737b7-422b-4555-8eaf-55778675e463">
+
+
 
 ## Queries
 ### Query Descriptions
