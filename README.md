@@ -33,8 +33,9 @@ In essence, this model captures the essence of our sports entity—team composit
 
 
 ### Entity Relationship Diagram (ERD)
+![FBF9E232-75E1-45F3-AE93-78587083CC09](https://github.com/sobaworm/Shoe-Box/assets/164225733/09b60b52-a34b-40d1-aebe-975b40755a0f)
 
-<img width="590" alt="Screenshot 2024-03-27 at 5 36 27 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/54597857-da6e-4db8-a06e-adb71cdb0891">
+
 
 ## Data Dictionary
 <img width="643" alt="Screenshot 2024-03-27 at 5 44 21 PM" src="https://github.com/sobaworm/Shoe-Box/assets/164225733/456b2536-7414-47de-b1a7-d66f27de5122">
