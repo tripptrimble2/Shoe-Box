@@ -15,19 +15,17 @@ We are tasked with developing a regional database that effectively organizes the
 
 ## Data Model
 ### Explanation of the Data Model
-Our data model is a streamlined representation of our sports organization’s operations. At its core is the Team entity, encompassing our main roster and the developmental youth academy. 
+Our data model is a streamlined representation designed to capture the ecosystem of a sports organization. Central to our model is the Team entity, which is considered the core for a constellation of players, staff, and their interactions.
 
-The Player entity captures individual athlete profiles, forming a one-to-many relationship with Team. A team fields numerous players, yet each player commits to only one team. GameStats stem from each player's record, charting performance metrics in various matches, illustrating a player's journey through the seasons.
+Player profiles form the foundation of our model, which details the demographics but also contractual and performance data, each linked to a single Team yet part of an intricate web that includes GameStats and TrainingSessions. The one-to-many relationship between Player and Gamestats reflect a detailed record of their contributions across matches, while their growth and development are tracked through various TrainingSessions, tied to their respective teams.
 
-TrainingSessions are systematically recorded, linked to the Team to track the preparation and skill enhancement of our squads. Matches intersect with teams via the Match_has_Team junction table, a many-to-many link mirroring the reality that matches are the confluence of competing teams.
+The Match entity chronicles the competitive engagements of our teams, intertwining with the Results to capture the outcomes and metrics that matter the most. It stands as a beacon for fan experiences, tied directly to TicketSales, each match generates various transactions, creating a one-to-many relationship that maps out the journey from ticket purchase to real time.
 
-TicketSales and FanEngagement are the fan-focused entities, the former documenting the seats sold per match and the latter mapping players to their fan interactions through the PlayerEngagements junction.
+FanEngagement events, represent our commitment to interactive fan experiences, form a many-to-many relationship with Player through PlayerEngagements. This depicts the multifaceted interactions our athletes have with their supporters.
 
-Emerging talents are noted in the YouthPlayers entity, each with a direct link to their professional counterpart in Player, showcasing the growth path from junior ranks to the professional stage.
+The Coach entity and the Team are in one-to-many partnership, showcasing the leadership and tactical expertise that drive team performance. Meanwhile, Merchandise connects to the Team to present a suite of branded items available to fans. This shows the one-to-many bond between products and their team affiliations.
 
-The Coach entity reflects the strategic minds guiding each team, while Merchandise offers a one-to-many snapshot of team-branded products available to fans.
-
-In essence, this model captures the essence of our sports entity—team composition, player development, match day experiences, and fan relations—all working in concert to drive our organization forward.
+This data model not only charts the current state ranging from player statistics to match day sales, but also serves as a tool for planning and development, highlighting key areas like talent, progression, fan engagement, and revenue, all while maintaining a fan-centric approach to the business of sports. 
 
 
 
