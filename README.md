@@ -6,7 +6,7 @@
 
 **Team Members:**
 - [Jennifer Kim] @sobaworm
-- [Kevin Shen] @kevinshin8
+- [Kevin Shen] @kevinshen8
 - [Michael Smith] @Nicklanoce7
 - [Tripp Trimble] @[]
 
