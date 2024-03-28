@@ -61,12 +61,6 @@ This query identifies the number of fan engagement events each goalkeeper is reg
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/303391bc-8d52-4165-b3d2-8ff991d18d48)
 
-SELECT Player.playerID, Player.name, Player.position, count(PlayerEngagements.eventID)
-FROM Player
-JOIN PlayerEngagements ON Player.playerId = PlayerEngagements.playerID
-JOIN FanEngagement ON PlayerEngagements.eventID = FanEngagement.eventID
-WHERE position = 'Goalkeeper'
-GROUP BY playerID;
 
 #### Query 2
 Query 2: Write a query to determine matches where ticket prices are higher than average, given the match occurs in Goal Arena
@@ -75,10 +69,6 @@ This query focuses on matches held at the Goal Arena. The ticket prices here are
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/a75f4c56-6259-4ed3-8cba-73c50c9c8bd7)
 
-select ns_Sp24_21484_Group8.Match.matchID, price
-from ns_Sp24_21484_Group8.Match
-join TicketSales using (matchID)
-Where price > (select avg(price) from TicketSales) AND venue in('Goal Arena');
 
 #### Query 3
 Query 3: Write a query to determine the total number of tickets sold for each match
@@ -87,21 +77,12 @@ This query calculates the total number of tickets sold for each match along with
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/f509c0a0-7a4f-45a4-b6db-3cd748247ca9)
 
-SELECT Match.matchID, Match.date, COUNT(TicketSales.ticketID) AS “TotalTicketsSold”
-FROM Match
-JOIN TicketSales using (matchID)
-GROUP BY Match.matchID, Match.date;
-
 #### Query 4
 Query 4: Write a query to find any players who have not participated in any fan engagement events
 
 This query identifies players who have not participated in any fan engagement events. This information can be pivotal for player management and marketing teams to encourage greater involvement from these players or to understand potential reasons for their lack of engagement. 
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/9691997e-6531-472c-96dc-9b9a0972acee)
-
-SELECT Player.name
-FROM Player
-WHERE NOT EXISTS(SELECT playerID FROM PlayerEngagements WHERE Player.playerID = PlayerEngagements.playerID);
 
 #### Query 5
 
@@ -110,14 +91,6 @@ Query 5: Write a query to list the players with the highest market value and wha
 This query lists players with the highest market value, their teams, and the number of training sessions they have attended. By examining the correlation between market value and training attendance, this provides insights into player development and valuation. Sorting by market value emphasizes the top-valued players, which in turn offers a clear perspective on high-value assets in the team. 
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/9ac62e7b-112b-465b-be39-4ebafbdda004)
-
-SELECT Player.name, Player.marketValue, Team.name, COUNT(TrainingHistory.sessionID), Player.marketValue/COUNT(TrainingHistory.sessionID) as 'Market value per Training session'
-FROM Player
-JOIN Team ON Player.teamID = Team.teamID
-JOIN TrainingHistory ON Player.playerID = TrainingHistory.playerID
-GROUP BY Player.name, Player.marketValue, Team.name
-ORDER BY Player.marketValue DESC
-
 
 #### Query 6
 
@@ -128,12 +101,6 @@ This query calculates the total market value of each team. This provides a cruci
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/dfb86259-cfac-414f-9dc0-c7b5dd1974c3)
 
-SELECT Team.name, SUM(marketValue)
-FROM Team
-JOIN Player ON Team.teamID = Player.teamID
-JOIN Results ON Team.teamID = Results.teamID
-GROUP BY Team.name
-ORDER BY AVG(teamScore) DESC;
 
 #### Query 8
 Query 8: Query to show the total goals for each team with at least X goals
@@ -142,12 +109,6 @@ This query is designed to display the total goals by each team, buy only for tho
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/67b979d3-3e38-49bf-baf2-e72558ae2eb2)
 
-select Team.name, sum(teamScore)
-from Team
-join Results using (teamID)
-group by Team.name
-having sum(teamScore) > 200;
-
 #### Query 9
 Query 9: If I wanted to know the price of a t-shirt for any player from a Republic
 
@@ -155,27 +116,12 @@ This query is designed to retrieve the prices of t-shirts related to players fro
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/a88069b1-52fa-4fd2-b19a-502ba8fa1f94)
 
-select Player.name as 'Player name', Team.name as 'Team name', Player.nationality, price
-from Player
-join Team using (teamID)
-join Merchandise using (teamID)
-where nationality regexp 'Republic' and type = 't-shirt'
-group by Player.name, price, Team.name, Player.nationality
-order by Player.name;
-
 #### Query 10
 Query 10: Determines total salaries of all coaches on the team
  
 The stored procedure CoachSalary is designed for calculating the total salaries of all coaches associated with a specific team within an organization. By taking an input parameter (theTeamID). This represents the unique identifier of a team. The procedure focuses on aggregating the salaries from the Coach table for those coases linked to Team_teamID. This functionality is valuable for a sports organization’s financial mamagementy and budgetary assesments which allowes for an effient way to determine the collective financial commitment towards the coaching staff of any given team. The stored procedure simplifies the task of assessing coaching expenses across different teams which promotes ease of use and ensures consistent tracking.
 
 ![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/e5b9d447-afc0-4bc6-a103-fd1a2d94d670)
-
-create procedure CoachSalary (IN theTeamID int)
-select sum(salary)
-from Coach
-where Team_teamID = theTeamID;
-
-Procedure name: CoachSalary
 
 ## Database Information
 **Database Name:** ns_Sp24_21484_Group8
