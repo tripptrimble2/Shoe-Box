@@ -173,27 +173,27 @@ order by Player.name;
 Additional information:
 
 1.  TeamsOver200
-   - Description: Retrieves information about teams having more than 200 recorded activities or entries.
+    Description: Retrieves information about teams having more than 200 recorded activities or entries.
 
 
 2. TeamMarketValue
-   - Description: Gathers data on the market value of each team within the database.
+    Description: Gathers data on the market value of each team within the database.
    
 
 3. RepublicTshirt
-   - Description: Accesses details about the Republic-themed t-shirts, including sales, stock, and designs.
+    Description: Accesses details about the Republic-themed t-shirts, including sales, stock, and designs.
  
 
 4. PlayersWithoutEngagements
-   - Description: Lists players who currently do not have any engagements or contracts.
+    Description: Lists players who currently do not have any engagements or contracts.
 
 
 5. MatchTixSold
-   - Description: Provides information on the number of tickets sold for various matches.
+    Description: Provides information on the number of tickets sold for various matches.
 
 
 6. MarketValuePerTrainingSession
-   - Description: Analyzes the market value of teams or players per training session attended.
+    Description: Analyzes the market value of teams or players per training session attended.
  
 7. GoalArenaPremiumMatch
    - Description: Extracts details about premium matches held at the Goal Arena, including ticket pricing, attendance, and special features.
