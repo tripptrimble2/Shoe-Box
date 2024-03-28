@@ -164,30 +164,40 @@ group by Player.name, price, Team.name, Player.nationality
 order by Player.name;
 
 #### Query 10
+Query 10: Determines total salaries of all coaches on the team
+ 
+The stored procedure CoachSalary is designed for calculating the total salaries of all coaches associated with a specific team within an organization. By taking an input parameter (theTeamID). This represents the unique identifier of a team. The procedure focuses on aggregating the salaries from the Coach table for those coases linked to Team_teamID. This functionality is valuable for a sports organization’s financial mamagementy and budgetary assesments which allowes for an effient way to determine the collective financial commitment towards the coaching staff of any given team. The stored procedure simplifies the task of assessing coaching expenses across different teams which promotes ease of use and ensures consistent tracking.
 
-...
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/e5b9d447-afc0-4bc6-a103-fd1a2d94d670)
+
+create procedure CoachSalary (IN theTeamID int)
+select sum(salary)
+from Coach
+where Team_teamID = theTeamID;
+
+Procedure name: CoachSalary
 
 ## Database Information
 **Database Name:** ns_Sp24_21484_Group8
 
 Additional information:
 
-1.)  call TeamsOver200: Retrieves information about teams having more than 200 recorded activities or entries.
+1.)  call TeamsOver200 (Query 1): Retrieves information about teams having more than 200 recorded activities or entries.
 
 
-2.) call TeamMarketValue: Gathers data on the market value of each team within the database.
+2.) call TeamMarketValue (Query 2): Gathers data on the market value of each team within the database.
    
 
-3.) call RepublicTshirt: Accesses details about the Republic-themed t-shirts, including sales, stock, and designs.
+3.) call RepublicTshirt (Query 3): Accesses details about the Republic-themed t-shirts, including sales, stock, and designs.
  
 
-4.) call PlayersWithoutEngagements: Lists players who currently do not have any engagements or contracts.
+4.) call PlayersWithoutEngagements (Query 4): Lists players who currently do not have any engagements or contracts.
 
 
-5.) call MatchTixSold: Provides information on the number of tickets sold for various matches.
+5.) call MatchTixSold (Query 5): Provides information on the number of tickets sold for various matches.
 
 
-6.) call MarketValuePerTrainingSession: Analyzes the market value of teams or players per training session attended.
+6.) call MarketValuePerTrainingSession (Query 6): Analyzes the market value of teams or players per training session attended.
  
-7.) call GoalArenaPremiumMatch: Extracts details about premium matches held at the Goal Arena, including ticket pricing, attendance, and special features.
+7.) call GoalArenaPremiumMatch (Query 7): Extracts details about premium matches held at the Goal Arena, including ticket pricing, attendance, and special features.
  
