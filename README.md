@@ -136,8 +136,32 @@ GROUP BY Team.name
 ORDER BY AVG(teamScore) DESC;
 
 #### Query 8
+Query 8: Query to show the total goals for each team with at least X goals
+
+This query is designed to display the total goals by each team, buy only for those teams that have scored more than a threshold amount. In this case, 200 goals. By summering the teamScore from the Results table and grouping by each team’s name the query filters out teams with lower total goals which focuses on high-scoring teams. This approach provides a clear view of the most successful teams within the league. This is key for analysis of team performance, planning, and for potential media and fan engagement, as it highlights the teams with notable goal-scoring record.
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/67b979d3-3e38-49bf-baf2-e72558ae2eb2)
+
+select Team.name, sum(teamScore)
+from Team
+join Results using (teamID)
+group by Team.name
+having sum(teamScore) > 200;
 
 #### Query 9
+Query 9: If I wanted to know the price of a t-shirt for any player from a Republic
+
+This query is designed to retrieve the prices of t-shirts related to players from any Republic along with their names, team names, and nationalities. By joining the Player, Team, and Merchandise tables and applying a condition to filter players based on nationality(containing Republic) and the type of merchandise(t-shirts). The query groups the results by player name, team name, price, and nationality, which ensures each entry represents a unique combination of these elements. By ordering the results by the player’s name, its easy to reference and compare. This is useful for fans or retailers looking to purchase or stock merchandise correlated to players from specific nationalities, which provides a clear overview of available options and prices.
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/a88069b1-52fa-4fd2-b19a-502ba8fa1f94)
+
+select Player.name as 'Player name', Team.name as 'Team name', Player.nationality, price
+from Player
+join Team using (teamID)
+join Merchandise using (teamID)
+where nationality regexp 'Republic' and type = 't-shirt'
+group by Player.name, price, Team.name, Player.nationality
+order by Player.name;
 
 #### Query 10
 
