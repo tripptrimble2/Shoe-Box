@@ -150,9 +150,14 @@ Additional information:
 
 
 5.) call MatchTixSold (Query 5): Provides information on the number of tickets sold for various matches.
+WinningTeams
 
+6.) call WinningTeams (Query 6): This query provides a list of teams that have achieved victories in recent competitions or matches, highlighting their winning statistics and details.
 
-6.) call MarketValuePerTrainingSession (Query 6): Analyzes the market value of teams or players per training session attended.
+7.) call MarketValuePerTrainingSession (Query 7): Analyzes the market value of teams or players per training session attended.
  
-7.) call GoalArenaPremiumMatch (Query 7): Extracts details about premium matches held at the Goal Arena, including ticket pricing, attendance, and special features.
- 
+8.) call GoalArenaPremiumMatch (Query 8): Extracts details about premium matches held at the Goal Arena, including ticket pricing, attendance, and special features.
+
+9.) call CoachSalary (Query 9): This procedure retrieves information regarding the salaries of coaches, possibly including data like average salary, highest salary, and related financial statistics.
+
+10.) call RepublicTshirt (Query 10): Accesses details about Republic-themed t-shirts, potentially including sales data, stock levels, and various designs available.
