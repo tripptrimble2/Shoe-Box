@@ -31,7 +31,8 @@ This data model not only charts the current state ranging from player statistics
 
 
 ### Entity Relationship Diagram (ERD)
-![FBF9E232-75E1-45F3-AE93-78587083CC09](https://github.com/sobaworm/Shoe-Box/assets/164225733/09b60b52-a34b-40d1-aebe-975b40755a0f)
+<img width="373" alt="Screenshot 2024-03-27 at 11 43 40 PM" src="https://github.com/tripptrimble2/Shoe-Box/assets/150174342/f5d4118d-aaa8-4009-a756-19f81621787f">
+
 
 
 
