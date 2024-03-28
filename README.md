@@ -95,6 +95,13 @@ This query lists players with the highest market value, their teams, and the num
 
 #### Query 6
 
+Query 6: Provides Team wins among teams who have more than 15 wins
+
+The stored procedure WinningTeams is designed to list the teams with more than 15 wins, which showcases their team IDs, names, and total number of wins. This is achieved by joining the Results and Team tables where the procedure focuses on matches where the team’s score surpasses that of their opponents, which indicates a win. The data is grouped by team ID to accumulate wins per team, and a HAVING clause is applied to filter out teams with 15 or fewer wins. The results are ordered in descending order of wins which prioritizes teams with the highest number of victories. This is useful for analyzing team performance and is a valuable tool for sports analysts, commentators, and fans.
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/4ab83f6f-abd9-4e98-820a-fdecfdc5d6e1)
+
+
 #### Query 7
 Query 7: List the market value of the team
 
