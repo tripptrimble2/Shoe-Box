@@ -54,7 +54,22 @@ This data model not only charts the current state ranging from player statistics
 ## Queries
 
 #### Query 1
-[Description]
+
+Query 1: Write a query to determine the number of events each goalkeeper is registered for 
+
+This query identifies the number of fan engagement events each goalkeeper is registered for along with their names and positions. It provides insights into the level of involvement of goalkeepers in fan engagement activities which is essential for understanding their public engagement and potential marketing opportunities. The use of GROUP BY cause organizes the data by individual goalkeepers which allows a clear view of the player’s engagement level.
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/303391bc-8d52-4165-b3d2-8ff991d18d48)
+
+SELECT Player.playerID, Player.name, Player.position, count(PlayerEngagements.eventID)
+FROM Player
+JOIN PlayerEngagements ON Player.playerId = PlayerEngagements.playerID
+JOIN FanEngagement ON PlayerEngagements.eventID = FanEngagement.eventID
+WHERE position = 'Goalkeeper'
+GROUP BY playerID;
+
+
+
 
 #### Query 2
 [Description]
