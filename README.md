@@ -53,6 +53,8 @@ This data model not only charts the current state ranging from player statistics
 
 ## Queries
 
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/2550a149-c312-478e-8552-becb397fe590)
+
 #### Query 1
 
 Query 1: Write a query to determine the number of events each goalkeeper is registered for 
