@@ -68,20 +68,72 @@ JOIN FanEngagement ON PlayerEngagements.eventID = FanEngagement.eventID
 WHERE position = 'Goalkeeper'
 GROUP BY playerID;
 
-
-
-
 #### Query 2
-[Description]
+Query 2: Write a query to determine matches where ticket prices are higher than average, given the match occurs in Goal Arena
+
+This query focuses on matches held at the Goal Arena. The ticket prices here are higher than average. By joining the Match and TicketSales tables, it helps in pinpointing those matches that might be of interest or higher value which guides marketing and pricing strategies. The conditional structure of the query ensures that only matches with above-average prices at this specific venue are selected. 
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/a75f4c56-6259-4ed3-8cba-73c50c9c8bd7)
+
+select ns_Sp24_21484_Group8.Match.matchID, price
+from ns_Sp24_21484_Group8.Match
+join TicketSales using (matchID)
+Where price > (select avg(price) from TicketSales) AND venue in('Goal Arena');
+
 #### Query 3
+Query 3: Write a query to determine the total number of tickets sold for each match
+
+This query calculates the total number of tickets sold for each match along with the match dates. This is crucial for guaging the popularity of different matches and managing stadium capacities and logistics. Grouping by match ID and date provides a clear breakdown of ticket sales per event which assists in revenue analysis and forecasting. 
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/f509c0a0-7a4f-45a4-b6db-3cd748247ca9)
+
+SELECT Match.matchID, Match.date, COUNT(TicketSales.ticketID) AS “TotalTicketsSold”
+FROM Match
+JOIN TicketSales using (matchID)
+GROUP BY Match.matchID, Match.date;
 
 #### Query 4
+Query 4: Write a query to find any players who have not participated in any fan engagement events
+
+This query identifies players who have not participated in any fan engagement events. This information can be pivotal for player management and marketing teams to encourage greater involvement from these players or to understand potential reasons for their lack of engagement. 
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/9691997e-6531-472c-96dc-9b9a0972acee)
+
+SELECT Player.name
+FROM Player
+WHERE NOT EXISTS(SELECT playerID FROM PlayerEngagements WHERE Player.playerID = PlayerEngagements.playerID);
 
 #### Query 5
+
+Query 5: Write a query to list the players with the highest market value and what team they play for and how many training sessions they have attended to see if the amount of training sessions attended has a correlation with market value.
+
+This query lists players with the highest market value, their teams, and the number of training sessions they have attended. By examining the correlation between market value and training attendance, this provides insights into player development and valuation. Sorting by market value emphasizes the top-valued players, which in turn offers a clear perspective on high-value assets in the team. 
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/9ac62e7b-112b-465b-be39-4ebafbdda004)
+
+SELECT Player.name, Player.marketValue, Team.name, COUNT(TrainingHistory.sessionID), Player.marketValue/COUNT(TrainingHistory.sessionID) as 'Market value per Training session'
+FROM Player
+JOIN Team ON Player.teamID = Team.teamID
+JOIN TrainingHistory ON Player.playerID = TrainingHistory.playerID
+GROUP BY Player.name, Player.marketValue, Team.name
+ORDER BY Player.marketValue DESC
+
 
 #### Query 6
 
 #### Query 7
+Query 7: List the market value of the team
+
+This query calculates the total market value of each team. This provides a crucial financial perspective on the teams. It achieves this by summing up the marking values of all players within each team. Additionally, by joining with the Results table and ordering the results based on the average team score in descending order, this tells us the correlation the team’s on-field performance with its collective market value. This data is necessary in understanding the financial strength and potential on-field success of each time which aids in strategic planning and assessment of team value.
+
+![image](https://github.com/sobaworm/Shoe-Box/assets/164225733/dfb86259-cfac-414f-9dc0-c7b5dd1974c3)
+
+SELECT Team.name, SUM(marketValue)
+FROM Team
+JOIN Player ON Team.teamID = Player.teamID
+JOIN Results ON Team.teamID = Results.teamID
+GROUP BY Team.name
+ORDER BY AVG(teamScore) DESC;
 
 #### Query 8
 
